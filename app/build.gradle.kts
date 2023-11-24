@@ -5,17 +5,6 @@ plugins {
 
 
 }
-
-publishing {
-    publications {
-        create<MavenPublication>("mavenJava") {
-            groupId = "kg.ticode.zukhridin_safarbek"
-            artifactId = "phone_masker"
-            version = "1.0.0"
-
-        }
-    }
-}
 android {
     namespace = "kg.ticode.zukhridin_safarbek.phonemasker"
     compileSdk = 34
@@ -48,7 +37,7 @@ android {
     }
 }
 dependencies {
-
+    implementation(project(":PhoneMaskerLib"))
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")

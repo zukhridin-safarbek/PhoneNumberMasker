@@ -16,4 +16,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "PhoneMasker"
 include(":app")
- 
+include(":PhoneMaskerLib")
